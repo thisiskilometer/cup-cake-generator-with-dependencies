@@ -1,7 +1,8 @@
 'use strict';
 
-const prompt = require('prompt-sync')();
-
+// import promptSync from 'prompt-sync';const prompt = promptSync(); = require('prompt-sync')();
+import promptSync from 'prompt-sync';
+const prompt = promptSync({ sigint: true });
 /////////////////////////////////////////////////////////////////
 // Cupcake generator v2
 

@@ -13,6 +13,10 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon --quiet"
+    "start": ""
+  },
+  "dependencies": {
+    "readline": "^1.3.0",
+    "readline-sync": "^1.4.10"
   }
 }
