@@ -1,8 +1,8 @@
 'use strict';
 
-// import readlineSyncSync from 'readlineSync-sync';const readlineSync = readlineSyncSync(); = require('readlineSync-sync')();
+// import readlineSyncSync from 'readlineSync-sync';const readlineSync = readlineSyncSync();
 import readlineSync from 'readline-sync';
-const readline = readlineSync.question();
+// const readline = readlineSync.question();
 /////////////////////////////////////////////////////////////////
 // Cupcake generator v2
 
@@ -33,8 +33,8 @@ console.log(
 const weekDays = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'];
 for (const day of weekDays) {
   console.log(day);
-  const flavor = readline('What flavor?');
-  const frosting = readline('What frosting?');
-  const topping = readline('What topping?');
+  const flavor = readlineSync.question('What flavor?');
+  const frosting = readlineSync.question('What frosting?');
+  const topping = readlineSync.question('What topping?');
   generateRecipe(flavor, frosting, topping);
 }
