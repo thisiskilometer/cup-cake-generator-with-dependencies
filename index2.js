@@ -38,3 +38,5 @@ for (const day of weekDays) {
   const topping = readlineSync.question('What topping?');
   generateRecipe(flavor, frosting, topping);
 }
+
+
